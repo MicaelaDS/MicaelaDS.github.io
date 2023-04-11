@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="momoshop-styles.css">
+    <link rel="icon" href="multimedia/momoroisotype.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMORO SHOP</title>
+</head>
+<body>
+    <header>
+        <img src="multimedia/logo.png" id="momoro-logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="us.html">Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <section id="shop-page">
+            <div id="shop-search">
+                    <form action="" id="search-form">
+                       <label for="shop-search-field">Search:</label>
+                        <input type="text" id="shop-search-field" class="field" placeholder="What are you looking for?">
+                        <input type="submit" id="search-button" value=" ">
+                    </form>
+            </div>
+            <div id="shop-container">
+                <div id="shop-nav">
+                    <ol id="shop-category">
+                        <li><button class="tab-button category-toggle tab-button-active" id="all-toggle">All</button></li>
+                        <li><button class="tab-button category-toggle" id="clothes-toggle">Clothes</button></li>
+                        <li><button class="tab-button category-toggle" id="decor-toggle">Decor</button></li>
+                        <li><button class="tab-button category-toggle" id="stationery-toggle">stationery</button></li>
+                        <li><button class="tab-button category-toggle" id="gadgets-toggle">Gadgets</button></li>
+                    </ol>
+                    <div id="shop-form-container">
+                        <form action="" id="shop-form">
+                            <label for="filter-price">Price:</label>
+                            <select id="filter-price" class="field long-field">
+                                    <option value="no-filter">No filter</option>
+                                    <option value="higher-to-lower">Higher to lower</option>
+                                    <option value="lower-to-higher">Lower to higher</option>
+                            </select>
+
+                            <label for="filter-date">Date:</label>
+                            <select id="filter-date" class="field long-field">
+                                    <option value="no-filter">No filter</option>
+                                    <option value="higher-to-lower">Newest</option>
+                                    <option value="lower-to-higher">Older</option>
+                            </select>
+        
+                            <input type="button" value="submit" class="button-style long-field" id="filter-submit">
+                        </form>
+                    </div>
+                </div>
+                <div id="shop-main" class="blossom-container">
+                    <section id="shop-promo-carousel">
+                            <img src="multimedia/clothes/clothes-promo-banner.png" id="shop-promo-image-clothes" class="promo-active">
+                            <img src="multimedia/decoration/decoration-promo-banner.png" id="shop-promo-image-decor">
+                            <img src="multimedia/stationery/stationery-promo-banner.png" id="shop-promo-image-stationery">
+                            <img src="multimedia/gadgets/gadgets-promo-banner.png" id="shop-promo-image-gadgets">
+
+                        <div id="promo-controls">
+                            <div id="shop-promo-clothes" class="shop-galery-control promo-active"></div>
+                            <div id="shop-promo-decor" class="shop-galery-control"></div>
+                            <div id="shop-promo-stationery" class="shop-galery-control"></div>
+                            <div id="shop-promo-gadgets" class="shop-galery-control"></div>
+                        </div>
+                    </section>
+
+                        <div id="shop-items">
+                            <div class="item-container">
+                                <img src="multimedia/clothes/NEW-purple-skirt.jpg" class="item-container-image">
+                                <p class="item-container-category">Clothes</p>
+                                <h3 class="item-container-title">Purple School Skirt</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/decoration/NEW-axolotl-plushie.jpg" class="item-container-image">
+                                <p class="item-container-category">Decor</p>
+                                <h3 class="item-container-title">Axolotl Plushie</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/stationery/NEW-12highlighter-marker.jpg" class="item-container-image">
+                                <p class="item-container-category">Stationery</p>
+                                <h3 class="item-container-title">12 Pastel Highliter Set</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/gadgets/NEW-sakuracardcaptor-headphones.jpg" class="item-container-image">
+                                <p class="item-container-category">Gadgets</p>
+                                <h3 class="item-container-title">Sakura Card Captor Headphones</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/clothes/NEW-keropudding-shirt.jpg" class="item-container-image">
+                                <p class="item-container-category">Clothes</p>
+                                <h3 class="item-container-title">Kero Pudding Shirt</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/decoration/NEW-pusheen-pillow.jpg" class="item-container-image">
+                                <p class="item-container-category">Decor</p>
+                                <h3 class="item-container-title">Pusheen Pillow</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/stationery/NEW-myhappytime-diary.jpg" class="item-container-image">
+                                <p class="item-container-category">Stationery</p>
+                                <h3 class="item-container-title">My Happy Time Diary</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/gadgets/NEW-froggie-keyboard.jpg" class="item-container-image">
+                                <p class="item-container-category">Gadgets</p>
+                                <h3 class="item-container-title">Froggie Keyboard</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="new-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/clothes/NEW-pink-skirt.jpg" class="item-container-image">
+                                <p class="item-container-category">Clothes</p>
+                                <h3 class="item-container-title">Pink School Skirt</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/decoration/NEW-bobba-plushie.webp" class="item-container-image">
+                                <p class="item-container-category">Decor</p>
+                                <h3 class="item-container-title">Bobba Plushie</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/stationery/NEW-unicornpink-bagpack.jpg" class="item-container-image">
+                                <p class="item-container-category">Stationery</p>
+                                <h3 class="item-container-title">Unicorn Pink Backpack</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/gadgets/NEW-rilakuma-mouse.jpg" class="item-container-image">
+                                <p class="item-container-category">Gadgets</p>
+                                <h3 class="item-container-title">Rilakuma Mouse</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/clothes/bunny-shirt.jpg" class="item-container-image">
+                                <p class="item-container-category">Clothes</p>
+                                <h3 class="item-container-title">Bunny Shirt</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/decoration/roundbunny-plushie.jpeg" class="item-container-image">
+                                <p class="item-container-category">Decor</p>
+                                <h3 class="item-container-title">Round Bunny Plushie</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/stationery/sakura-pencilcase.jpg" class="item-container-image">
+                                <p class="item-container-category">Stationery</p>
+                                <h3 class="item-container-title">Sakura Tree Pencil Case</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                            <div class="item-container">
+                                <img src="multimedia/gadgets/heartluminouspink-keyboard.jpg" class="item-container-image">
+                                <p class="item-container-category">Gadgets</p>
+                                <h3 class="item-container-title">Luminous Heart Keyboard</h3>
+                                <p class="item-price">$1200</p>
+                                <a href="product.html" class="item-container-add-to-cart">Add to cart >></a>
+                            </div>
+                        </div>
+                        <div id="item-controls">
+                            <div id="shop-promo-clothes" class="shop-item-control promo-active"></div>
+                            <div id="shop-promo-decor" class="shop-item-control"></div>
+                            <div id="shop-promo-stationery" class="shop-item-control"></div>
+                            <div id="shop-promo-gadgets" class="shop-item-control"></div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <p id="all-rights-reserved">MOMOROSHOP - All rights reserved ®</p>
+            <img src="multimedia/momoroisotype.png" alt="Isotype" id="footer-isotype">
+        </footer>
+    </body>
+
+    <script src="momoshop-shop-script.js"></script>
+    <script src="momoshop-shop-jq.js"></script>
+</body>
+</html>
